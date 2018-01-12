@@ -11,7 +11,7 @@ buildscript {
 }
 
 repositories {
-    jcenter()
+    jcenter();
 }
 
 apply plugin: 'java'
@@ -32,10 +32,10 @@ dependencies {
 
 appengine {
     downloadSdk = true
+
     appcfg {
         oauth2 = true
     }
-
     endpoints {
         getClientLibsOnBuild = true
         getDiscoveryDocsOnBuild = true
