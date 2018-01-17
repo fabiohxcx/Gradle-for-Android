@@ -21,6 +21,7 @@ import java.io.IOException;
 public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
+    public String joke;
 
     @Override
     protected String doInBackground(Pair<Context, String>... params) {
@@ -57,5 +58,6 @@ public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, S
         Intent myIntent = new Intent(context, JokeActivity.class);
         myIntent.putExtra(JokeActivity.EXTRA_JOKE, result);
         context.startActivity(myIntent);
+        joke = result;
     }
 }

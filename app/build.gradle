@@ -40,7 +40,6 @@ dependencies {
 
     compile 'com.android.support:appcompat-v7:26.1.0'
 
-    compile project(":tellJokes")
     compile project(":androidlibrary")
 
     androidTestCompile('com.android.support.test.espresso:espresso-core:3.0.1', {
